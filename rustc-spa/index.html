@@ -36,6 +36,7 @@ use rustcspa::{App, State};
 fn main() {
     let myApp: App = App::new();
     let myStore: State::store = State::new();
+    myStore.setState&lt;_&gt;("Rick Astley");
     let mut myElem: String = `
       &lt;div&gt;{{myStore.name}}&lt;/div&gt;
     `;
