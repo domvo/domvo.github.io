@@ -15,6 +15,10 @@
       width: 100vw;
       height: 100vh;
     }
+    pre {
+      background: lightgray;
+      font-family: monospace;
+    }
   </style>
 </head>
 <body>
@@ -24,9 +28,24 @@
     Rusty-SPA is a Single Page Application framework powered by WASM and Rust. It is not yet ready for production
     but ready to play around with and already see the truly blazing fast render times. Enjoy!
   </p>
+  <h2>Getting Started</h2>
+  <pre>extern crate rustcspa;
+
+use rustcspa::{App, State};
+    
+fn main() {
+    let myApp: App = App::new();
+    let myStore: State::store = State::new();
+    let mut myElem: String = `
+      <div>{{myStore.name}}</div>
+    `;
+    myApp.render("#app", "")
+}
+
+  </pre>
   <h2>Docs</h2>
   <p>
-    <a href="/docs">To the documentation (external link)</a>
+    <a href="/docs">To the documentation (external link)2</a>
   </p>
   <h2>Examples</h2>
   <ul>
