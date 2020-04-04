@@ -15,10 +15,10 @@
       width: 100vw;
       height: 100vh;
     }
-    pre {
+    /* pre {
       background: lightgray;
       font-family: monospace;
-    }
+    } */
   </style>
 </head>
 <body>
@@ -37,7 +37,7 @@ fn main() {
     let myApp: App = App::new();
     let myStore: State::store = State::new();
     let mut myElem: String = `
-      <div>{{myStore.name}}</div>
+      &lt;div&gt;{{myStore.name}}&lt;/div&gt;
     `;
     myApp.render("#app", "")
 }
