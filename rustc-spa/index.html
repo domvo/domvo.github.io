@@ -21,36 +21,44 @@
   <h1>This is a single page application powered by Rust</h1>
   <h2>Examples</h2>
   <ul>
-    <li><a href="https://www.youtube.com/watch?time_continue=1&v=dQw4w9WgXcQ">To Do Application</a></li>
-    <li><a href="https://www.youtube.com/watch?time_continue=1&v=dQw4w9WgXcQ">Trello Clone</a></li>
-    <li><a href="https://www.youtube.com/watch?time_continue=1&v=dQw4w9WgXcQ">JIRA Clone</a></li>
-    <li><a href="https://www.youtube.com/watch?time_continue=1&v=dQw4w9WgXcQ">twitch.tv Clone</a></li>
+    <li><a href="/todo">To Do Application</a></li>
+    <li><a href="/trello">Trello Clone</a></li>
+    <li><a href="/jira">JIRA Clone</a></li>
+    <li><a href="/twitch">twitch.tv Clone</a></li>
   </ul>
   <h2>Contribute</h2>
-  <p>We want contributing to Gatsby to be fun, enjoyable, and educational for anyone and everyone. All contributions are welcome, including issues, new docs as well as updates and tweaks, blog posts, workshops, and more.
+  <p>We want contributing to Gatsby to be fun, enjoyable, and educational for anyone and everyone. All contributions are welcome, including issues, new docs as well as updates and tweaks, blog posts, workshops, and more.</p>
 
-    Not sure how to start contributing?
-    If you are worried or don’t know where to start, check out our where to participate page. You can reach out with questions to Marcy Sutton (@marcysutton) or @GatsbyJS on Twitter, and anyone from the Gatsby team on Discord. You can also submit an issue and a maintainer can give you guidance!
+  <h3>Not sure how to start contributing?</h3>
+  If you are worried or don’t know where to start, check out our where to participate page. You can reach out with questions to Marcy Sutton (@marcysutton) or @GatsbyJS on Twitter, and anyone from the Gatsby team on Discord. You can also submit an issue and a maintainer can give you guidance!
     
-    Pair programming
-    Gatsby.js offers free pair programming sessions to the community, if there’s something you’d like to work on together. Get in touch with us if you have a question about contributing or an idea for something to pair on!
+  <h3>Pair programming</h3>
+  Rusty-SPA offers free pair programming sessions to the community, if there’s something you’d like to work on together. Get in touch with us if you have a question about contributing or an idea for something to pair on!
     
-    In this section:
-    How to File an Issue
-    How to Make a Reproducible Test Case
-    How to Open a Pull Request
-    How to Label an Issue
-    Triaging GitHub Issues
-    Managing Pull Requests
-    Docs Contributions
-    Blog Contributions
-    Code Contributions
-    Website Contributions
-    Community Contributions
-    Docs & Blog Components
+  <p>In this section:</p>
+    <ul>
+      <li>How to File an Issue</li>
+      <li>How to Make a Reproducible Test Case</li>
+      <li>How to Open a Pull Request</li>
+      <li>How to Label an Issue</li>
+      <li>Triaging GitHub Issues</li>
+      <li>Managing Pull Requests</li>
+      <li>Docs Contributions</li>
+      <li>Blog Contributions</li>
+      <li>Code Contributions</li>
+      <li>Website Contributions</li>
+      <li>Community Contributions</li>
+      <li>Docs & Blog Components</li>
+    </ul>
     </p>
   <script>
-    window.location.href="https://www.youtube.com/watch?time_continue=0&v=dQw4w9WgXcQ";
+    document.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.href="https://www.youtube.com/watch?time_continue=0&v=dQw4w9WgXcQ";
+      });
+    });
   </script>
 </body>
 </html>
