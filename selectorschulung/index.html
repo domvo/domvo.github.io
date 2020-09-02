@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selektor Schulung</title>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="dimmer"></div>
+    <div class="container">
+        <h1>Selector Game</h1>
+        <h3>Finde die Selektoren heraus und beachte dabei möglichst die Eltern Elemente</h3>
+
+        <h4>Aufgabe 1</h4>
+        <div class="question" id="q1">
+            <div class="code">
+                <pre><code class="language-markup">&lt;h1&gt;&lt;/h1&gt; &lt;!-- This --&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 2</h4>
+        <div class="question" id="q2">
+            <div class="code">
+                <pre><code class="language-markup">&lt;h1 class=&quot;heading&quot;&gt;&lt;/h1&gt; &lt;!-- This --&gt;
+&lt;h1&gt;&lt;/h1&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 3</h4>
+        <div class="question" id="q3">
+            <div class="code">
+                <pre><code class="language-markup">&lt;span id=&quot;trbo-oldPrice&quot;&gt;&lt;/span&gt; &lt;!-- This --&gt;
+&lt;span&gt;&lt;/span&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 4</h4>
+        <div class="question" id="q4">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;&lt;/div&gt; &lt;!-- This --&gt;
+&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 5</h4>
+        <div class="question" id="q5">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h2&gt;&lt;/h2&gt; &lt;!-- This --&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;&lt;/h2&gt
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 6</h4>
+        <div class="question" id="q6">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;content header&quot;&gt;&lt;/div&gt; &lt;!-- This --&gt;
+    &lt;div class=&quot;content&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 7</h4>
+        <div class="question" id="q7">
+            <div class="code">
+                <pre><code class="language-markup">&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li&gt;&lt;/li&gt; &lt;!-- This --&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 8</h4>
+        <div class="question" id="q8">
+            <div class="code">
+                <pre><code class="language-markup">&lt;ul class=&quot;nav&quot;&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt; &lt;!-- This --&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 9</h4>
+        <div class="question" id="q9">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt; 
+        &lt;div&gt; &lt;!-- This --&gt;
+            &lt;div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 10</h4>
+        <div class="question" id="q10">
+
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;span data-name=&quot;anna&quot;&gt;&lt;/span&gt;
+    &lt;span data-name=&quot;marco&quot;&gt;&lt;/span&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;span data-name=&quot;sam&quot;&gt;&lt;/span&gt; &lt;!-- This --&gt;
+        &lt;span data-name=&quot;hansi&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 11</h4>
+        <div class="question" id="q11">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;Flight_2ZhkX&quot;&gt;&lt;/div&gt; &lt;!-- This --&gt;
+&lt;/div&gt;
+
+&lt;!--&quot;2ZhkX&quot; im Klassennamen ist dabei variabel!--&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+        <h4>Aufgabe 12</h4>
+        <div class="question" id="q12">
+            <div class="code">
+                <pre><code class="language-markup">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;h2&gt;&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;h2&gt;&lt;/h2&gt  &lt;!-- This --&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="answer">
+                <input type="text" placeholder="Dein Selector"> <button>Check</button>
+            </div>
+        </div>
+
+
+    </div>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>
